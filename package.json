@@ -1,0 +1,24 @@
+{
+  "name": "ng-express-cms",
+  "version": "0.0.1",
+  "description": "A Content Managment System using Angular (v5+) + Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vandivier/ng-express-cms.git"
+  },
+  "keywords": [
+    "angular",
+    "express",
+    "node"
+  ],
+  "author": "John Vandivier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vandivier/ng-express-cms/issues"
+  },
+  "homepage": "https://github.com/Vandivier/ng-express-cms#readme"
+}
