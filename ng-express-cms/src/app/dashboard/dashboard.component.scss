@@ -1,0 +1,44 @@
+/* TODO: to styles.scss ? */
+/* ref: https://youtu.be/oa9cnWTpqP8?t=15m38s */
+
+.container {
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+.container.article-container {
+    background: #57B3F1;
+    cursor: pointer;
+    font-weight: bold;
+    padding: .5em;
+}
+
+.col {
+    padding: .4em 1.3em;
+}
+
+.color-dark {
+    background: #2885C4;
+}
+
+.color-light {
+    background: #57B3F1;
+}
+
+input.txt {
+    border: 0;
+    margin-bottom: 2em;
+    padding: 1em;
+    width: 80%;
+}
+
+input.btn {
+    background: rgba(255, 48, 48, 0.9);
+    border: 0;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 1em;
+    padding: 1em 3em;
+    width: 80%;
+}

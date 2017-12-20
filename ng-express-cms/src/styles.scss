@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background: rgba(105, 235, 210, 0.88);
+    color: white;
+    font-family: 'Arial';
+    padding: 3em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 0 2em 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
