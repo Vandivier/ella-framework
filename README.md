@@ -20,3 +20,31 @@ The most important is #1. #2+ are not ordered.
 1. https://codecraft.tv/courses/angular/reactive-programming-with-rxjs/rxjs-and-angular/
 1. https://developers.google.com/web/fundamentals/architecture/app-shell
 1. https://blog.angular.io/angular-5-1-more-now-available-27d372f5eb4e
+1. http://www.afterecon.com/other/existing-js-cms-solutions-shit/
+1. https://www.youtube.com/watch?v=oa9cnWTpqP8
+
+UX: Bootstrap 4 + Angular Material + Rando Components including Angular and HTML5
+1. https://www.youtube.com/watch?v=-k73oWFrRoE
+1. https://getbootstrap.com/docs/4.0/examples/
+1. https://material.angular.io/components/categories
+1. https://www.youtube.com/watch?v=XGEsZmoZNbw
+
+Card component
+https://getbootstrap.com/docs/4.0/components/card/
+
+log in
+https://getbootstrap.com/docs/4.0/examples/signin/
+
+admin ui / dashboard
+https://getbootstrap.com/docs/4.0/examples/dashboard/
+
+blog (pre-archive)
+https://getbootstrap.com/docs/4.0/examples/blog/
+
+homepage
+https://getbootstrap.com/docs/4.0/examples/justified-nav/#
+
+magic werdz
+ng generate component navbar --module app
+
+
