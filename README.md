@@ -23,11 +23,12 @@ The most important is #1. #2+ are not ordered.
 1. http://www.afterecon.com/other/existing-js-cms-solutions-shit/
 1. https://www.youtube.com/watch?v=oa9cnWTpqP8
 
-UX: Bootstrap 4 + Angular Material + Rando Components including Angular and HTML5
+UX: Bootstrap 4 + Angular Material + Rando Components including Angular and HTML5, SCSS
 1. https://www.youtube.com/watch?v=-k73oWFrRoE
 1. https://getbootstrap.com/docs/4.0/examples/
 1. https://material.angular.io/components/categories
 1. https://www.youtube.com/watch?v=XGEsZmoZNbw
+1. https://scotch.io/tutorials/using-sass-with-the-angular-cli
 
 Card component
 https://getbootstrap.com/docs/4.0/components/card/
