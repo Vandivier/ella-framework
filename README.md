@@ -29,6 +29,15 @@ UX: Bootstrap 4 + Angular Material + Rando Components including Angular and HTML
 1. https://material.angular.io/components/categories
 1. https://www.youtube.com/watch?v=XGEsZmoZNbw
 1. https://scotch.io/tutorials/using-sass-with-the-angular-cli
+1. https://www.youtube.com/watch?v=2osMpXOe5fA
+1. CSS Grid...? https://www.youtube.com/watch?v=7kVeCqQCxlk
+1. CSS Grid...? https://www.youtube.com/watch?v=jV8B24rSN5o
+
+Auth and Firebase
+1. https://www.youtube.com/watch?v=O_jxEC0hWcA
+
+Chart.js w/ Angular 5, with data and API (ng generate service)
+1. https://www.youtube.com/watch?v=RTzi5DS7On4
 
 Card component
 https://getbootstrap.com/docs/4.0/components/card/

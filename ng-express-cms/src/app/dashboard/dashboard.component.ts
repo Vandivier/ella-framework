@@ -7,12 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  itemCount: number = 4;
+  arroArticles: any[] = [{ // TODO: Article, not any
+      'sContent': 'lorem ipsum, etc, etc.',
+      'sTitle': 'This is my first article!'
+  }, {
+      'sContent': 'scoobie doobie do. where r u.',
+      'sTitle': 'This is my second [:'
+  }];
+  oNewArticle: any = {}; // TODO: Article, not any
   sSubmitArticleButtonText: string = 'Publish'; // TODO: or Schedule or Update depending on WordPress-like conditions
-  arrsArticleTitles: string[] = ['This is my first article!',
-                                 'This is my second [:'];
 
   constructor() { }
+
+  fAddArticle() {
+      if (this.oNewArticle.sTitle
+          && this.oNewArticle.sContent)
+      {
+          this.arroArticles.push(this.oNewArticle);
+      }
+  }
 
   ngOnInit() {
   }
