@@ -10,7 +10,7 @@
             <p>Use the form below to add a new article.</p>
 
             <form>
-                <input type="text" class="txt" name="title" placeholder="Article Title">
+                <input type="text" class="txt" name="title" placeholder="Article Title" [(ngModel)]="sArticleTitle">
                 <input type="text" class="txt" name="body" placeholder="Ya, so what about it...?">
                 <input type="submit" class="btn" name="save" value="Save"> <!-- TODO: functional implementation of save; admin sees it but not visitor -->
                 <input type="submit" class="btn" name="submit article" value="{{ sSubmitArticleButtonText }}">
@@ -19,7 +19,7 @@
     </div>
     <div class="col">
         <p class="container article-container">
-            This is my first article! <!-- TODO: click to go to article page -->
+            {{ sArticleTitle }} <!-- TODO: click to go to article page -->
         </p>
     </div>
 </div>
