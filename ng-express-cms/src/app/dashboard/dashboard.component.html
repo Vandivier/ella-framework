@@ -18,7 +18,8 @@
         </div>
     </div>
     <div class="col">
-        <p class="container article-container">
+        <p class="container article-container"
+           *ngFor="let sArticleTitle of arrsArticleTitles">
             {{ sArticleTitle }} <!-- TODO: click to go to article page -->
         </p>
     </div>
