@@ -35,6 +35,7 @@ UX: Bootstrap 4 + Angular Material + Rando Components including Angular and HTML
 
 Auth and Firebase
 1. https://www.youtube.com/watch?v=O_jxEC0hWcA
+1. https://github.com/diegohaz/rest
 
 Chart.js w/ Angular 5, with data and API (ng generate service)
 1. https://www.youtube.com/watch?v=RTzi5DS7On4
@@ -57,4 +58,7 @@ https://getbootstrap.com/docs/4.0/examples/justified-nav/#
 magic werdz
 ng generate component navbar --module app
 
-
+orchestration, ORM, API generation
+1. https://www.slant.co/improve/topics/11235/~javascript-orms
+1. https://loopback.io/ (v4)
+1. https://github.com/odino/the-conductor
