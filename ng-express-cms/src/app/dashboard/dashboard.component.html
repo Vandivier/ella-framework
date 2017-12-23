@@ -3,7 +3,7 @@
         <p>Create a New Blog Article</p>
     </div>
     <div class="col">
-        <p>Your Articles ({{ arrsArticleTitles.length }})</p>
+        <p>Your Articles ({{ arroArticles.length }})</p>
     </div>
     <div class="container color-light">
         <div class="col">
@@ -34,6 +34,7 @@
     </div>
     <div class="col">
         <p class="container article-container"
+           (click)="fRemoveArticle()"
            *ngFor="let oArticle of arroArticles">
             {{ oArticle.sTitle }} <!-- TODO: click to go to article page -->
         </p>
