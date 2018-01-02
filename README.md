@@ -32,6 +32,7 @@ The most important is #1. #2+ are not ordered.
 1. https://www.youtube.com/watch?v=oa9cnWTpqP8
 
 UX: Bootstrap 4 + Angular Material + Rando Components including Angular and HTML5, SCSS
+1. using Boostrap 4.0.0-beta.3
 1. https://www.youtube.com/watch?v=-k73oWFrRoE
 1. https://getbootstrap.com/docs/4.0/examples/
 1. https://material.angular.io/components/categories
@@ -40,6 +41,8 @@ UX: Bootstrap 4 + Angular Material + Rando Components including Angular and HTML
 1. https://www.youtube.com/watch?v=2osMpXOe5fA
 1. CSS Grid...? https://www.youtube.com/watch?v=7kVeCqQCxlk
 1. CSS Grid...? https://www.youtube.com/watch?v=jV8B24rSN5o
+1. https://ng-bootstrap.github.io/#/components/rating/examples
+1. https://www.bootstrapcdn.com/
 
 Auth and Firebase
 1. https://www.youtube.com/watch?v=O_jxEC0hWcA
