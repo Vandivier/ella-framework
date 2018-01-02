@@ -8,12 +8,15 @@ Dibs on the name Express CMS for when I start supporting other frameworks, esp V
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
 
 ### Launching the app
-1. clone
-1. `npm install` in the root folder
-1. `cd ng-express-cms`
 1. `npm install` in the ng-express-cms child folder
 1. `npm start` in the ng-express-cms child folder
-1. visit localhost:4200
+1. visit localhost:4200 for the UI app. API served from localhost:3200
+
+### Architecty Things
+1. The API server and the Angular Universal server are distinct. So there are three entry points in the code:
+    1. Express API server entry point at /src/server.js
+    1. Angular Universal server entry point at /src/main.ts
+    1. Angular Universal UI entry point at /src/client/app.module.ts
 
 ### related projects and links
 The most important is #1. #2+ are not ordered.
