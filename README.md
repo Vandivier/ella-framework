@@ -5,6 +5,8 @@ Right now I'm using Angular (v5.1+) in this repo.
 
 Dibs on the name Express CMS for when I start supporting other frameworks, esp Vue and React
 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
+
 ### Launching the app
 1. clone
 1. `npm install` in the root folder
@@ -30,6 +32,7 @@ The most important is #1. #2+ are not ordered.
 1. https://blog.angular.io/angular-5-1-more-now-available-27d372f5eb4e
 1. http://www.afterecon.com/other/existing-js-cms-solutions-shit/
 1. https://www.youtube.com/watch?v=oa9cnWTpqP8
+1. https://github.com/angular/universal-starter/issues/411
 
 UX: Bootstrap 4 + Angular Material + Rando Components including Angular and HTML5, SCSS
 1. using Boostrap 4.0.0-beta.3
