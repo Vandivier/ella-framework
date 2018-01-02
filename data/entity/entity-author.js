@@ -12,4 +12,5 @@ export class Author {
 
     @OneToMany(type => Article, article => article.author) // ref: http://typeorm.io/#/undefined/creating-a-many-to-one--one-to-many-relation
     arrArticles: Article[];
+
 }
