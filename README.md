@@ -5,6 +5,14 @@ Right now I'm using Angular (v5.1+) in this repo.
 
 Dibs on the name Express CMS for when I start supporting other frameworks, esp Vue and React
 
+### Launching the app
+1. clone
+1. `npm install` in the root folder
+1. `cd ng-express-cms`
+1. `npm install` in the ng-express-cms child folder
+1. `npm start` in the ng-express-cms child folder
+1. visit localhost:4200
+
 ### related projects and links
 The most important is #1. #2+ are not ordered.
 1. https://medium.com/@cyrilletuzi/angular-server-side-rendering-in-node-with-express-universal-engine-dce21933ddce
