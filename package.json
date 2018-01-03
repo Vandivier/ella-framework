@@ -6,6 +6,8 @@
     "forever": "forever start ./bin/www",
     "ng": "ng",
     "start": "ng serve && node ./bin/www",
+    "start-express": "node ./src/bin/www",
+    "start-ng": "ng serve",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",

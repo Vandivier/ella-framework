@@ -10,13 +10,13 @@
  **/
 
 const bodyParser = require('body-parser');
-const compass = require('compass');
-const cookieParser = require('cookie-parser');
 const express = require('express');
 const path = require('path');
 
 const isoUtils = require('./services/serviceIsomorphicUtilities');
 const logger = require('./services/serviceLogger');
+
+const controllerLogger = require('./controllers/controllerLogger');
 
 var app = express();
 
@@ -25,5 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/logger', controllerLogger);
 
 isoUtils.fInitState();
+
+logger.logInfo('express server running on port 3200')
 
 module.exports = app;

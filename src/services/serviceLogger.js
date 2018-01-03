@@ -1,6 +1,9 @@
 /**
  *  A general purpose logger. Reports to /var/log, assuming a Linux server
+ *  TODO: if log file or folder(s) dont exist, make them
+ *  TODO: parameter to pass from package.json so we con't create log file and folder, just report to command line
  */
+
 const fs = require('fs');
 const EOL = require('os').EOL;
 
