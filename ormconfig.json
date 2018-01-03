@@ -2,8 +2,8 @@
   "type": "mysql",
   "host": "localhost",
   "port": 3306,
-  "username": "root",
-  "password": "password",
+  "username": "test",
+  "password": "test",
   "database": "NgExpressCmsDev",
   "synchronize": true,
   "entities": [
