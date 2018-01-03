@@ -36,6 +36,8 @@ The most important is #1. #2+ are not ordered.
 1. http://www.afterecon.com/other/existing-js-cms-solutions-shit/
 1. https://www.youtube.com/watch?v=oa9cnWTpqP8
 1. https://github.com/angular/universal-starter/issues/411
+1. https://github.com/typeorm/typescript-express-example/blob/master/src/routes.ts
+1. https://github.com/seriema/angular-apimock
 
 UX: Bootstrap 4 + Angular Material + Rando Components including Angular and HTML5, SCSS
 1. using Boostrap 4.0.0-beta.3
@@ -79,3 +81,15 @@ orchestration, ORM, API generation
 1. https://www.slant.co/improve/topics/11235/~javascript-orms
 1. https://loopback.io/ (v4)
 1. https://github.com/odino/the-conductor
+
+
+https://dev.mysql.com/downloads/windows/installer/5.7.html
+mysql-installer-web-community-5.7.20.0.msi
+localhost db server tcp/ip at port 3306, config type dev machine, root pass: password
+run as windows service, name MySQL57
+interact via mysql shell (mysql-js)
+
+conventions
+1. generate non-flat services (generate --flat=false)
+1. seperate API server from ng universal rendering back end
+1. name services like service-a and componenets like component-b (ng cli compatible)
