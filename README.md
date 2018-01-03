@@ -8,13 +8,13 @@ Dibs on the name Express CMS for when I start supporting other frameworks, esp V
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
 
 ### Launching the app
-1. install MySQL*
+1. install MySQL Server 5.7*
 1. `npm install`
 1. Not Windows: `npm start`
     1. Windows: open two processes/command lines. In one, `npm run-script start-express`. In the other, `npm run-script start-ng`.
 1. visit localhost:4200 for the UI app. API served from localhost:3200
 
-* The application works out-of-the-box with MySQL, but with trivial modification the project will support other SQL DBs and even NoSQL DBs. The limitting factor is TypeORM.
+* Developed w 5.7.20x86, but may work with other versions. The application works out-of-the-box with MySQL, but with trivial modification the project will support other SQL DBs and even NoSQL DBs. The limitting factor is TypeORM.
 
 ### Architecty Things
 1. The API server and the Angular Universal server are distinct. So there are three entry points in the code:
@@ -42,6 +42,8 @@ The most important is #1. #2+ are not ordered.
 1. https://github.com/angular/universal-starter/issues/411
 1. https://github.com/typeorm/typescript-express-example/blob/master/src/routes.ts
 1. https://github.com/seriema/angular-apimock
+1. https://github.com/EreckGordon/angular-universal-pwa-starter
+1. https://github.com/ramsaylanier/VuePress
 
 UX: Bootstrap 4 + Angular Material + Rando Components including Angular and HTML5, SCSS
 1. using Boostrap 4.0.0-beta.3
@@ -90,8 +92,10 @@ orchestration, ORM, API generation
 https://dev.mysql.com/downloads/windows/installer/5.7.html
 mysql-installer-web-community-5.7.20.0.msi
 localhost db server tcp/ip at port 3306, config type dev machine, root pass: password
-run as windows service, name MySQL57
-interact via mysql shell (mysql-js)
+test user, DB admin, host %, pass: test
+run as windows service, name MYSQL57
+X Protocol / doc store disabled
+C:\Program Files (x86)\MySQL\MySQL Server 5.7
 
 conventions
 1. generate non-flat services (generate --flat=false)
