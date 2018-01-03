@@ -1,6 +1,6 @@
 // TODO: autosynced create and last updated time stamps
 
-import {Entity, PrimaryGeneratedColumn, Column} from 'typeorm';
+import {Entity, PrimaryGeneratedColumn, ManyToOne, Column} from 'typeorm';
 import {Author} from './entity-author';
 
 @Entity()
@@ -15,7 +15,7 @@ export class Article {
     @Column()
     sContent: string;
 
-    @ManyToOne(type => Author, author => author.photos)
+    @ManyToOne(type => Author, author => author.arrArticles)
     author: Author;
 
 }
