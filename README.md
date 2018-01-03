@@ -8,9 +8,12 @@ Dibs on the name Express CMS for when I start supporting other frameworks, esp V
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
 
 ### Launching the app
-1. `npm install` in the ng-express-cms child folder
-1. `npm start` in the ng-express-cms child folder
+1. install MySQL*
+1. `npm install`
+1. `npm start`
 1. visit localhost:4200 for the UI app. API served from localhost:3200
+
+* The application works out-of-the-box with MySQL, but with trivial modification the project will support other SQL DBs and even NoSQL DBs. The limitting factor is TypeORM.
 
 ### Architecty Things
 1. The API server and the Angular Universal server are distinct. So there are three entry points in the code:
