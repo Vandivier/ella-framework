@@ -18,7 +18,7 @@ const logger = require('./services/serviceLogger');
 
 const controllerLogger = require('./controllers/controllerLogger');
 
-var app = express();
+var app = express(); // TODO: const or let
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -28,18 +28,19 @@ isoUtils.fInitState();
 
 logger.logInfo('express server running on port 3200');
 
-// ref: https://www.w3schools.com/nodejs/nodejs_mysql.asp
-var mysql = require('mysql');
+setupDatabase();
 
-var con = mysql.createConnection({
-  host: "localhost",
-  user: "test",
-  password: "test"
-});
-
-con.connect(function(err) {
-  if (err) throw err;
-  console.log("Connected!");
-});
+// TODO: to dedicated service
+async function setupDatabase() {
+    try {
+        //await isoUtils.fpWait(); // just to allow debugger to catch process; DO NOT CHECK IN UNCOMMENTED
+        //debugger
+        logger.logInfo('connection:' + connection);
+        logger.logInfo('connection.isConnected:' + connection.isConnected);
+    } catch (e) {
+        debugger
+        logger.logError('initTypeOrm err', e);
+    }
+}
 
 module.exports = app;
