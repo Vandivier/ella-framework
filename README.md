@@ -1,14 +1,17 @@
-# ng-express-cms
-Because KeystoneJS is honestly shit
+# Ella
+ref: https://github.com/Vandivier/ng-express-cms/blob/master/README.md
 
-Right now I'm using Angular (v5.1+) in this repo.
+Rebranding to Ella. Ella is a CMS. Name comes from Express + Loopback + Angular = Ela, but Ella is a person's name, so, like, that's better.
 
-Dibs on the name Express CMS for when I start supporting other frameworks, esp Vue and React
+Don't want to call it ng-express-cms because the api server is loopback.
+
+Uses Angular Universal + Angular (v5.1+) + Angular CLI + Express + MySQL + TypeORM
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
 
 ### Launching the app
 1. install MySQL Server 5.7*
+1. `CREATE DATABASE ellacms`. TypeORM updates DB, but it must already exist. Optionally verify with `SHOW DATABASES`.
 1. `npm install`
 1. Not Windows: `npm start`
     1. Windows: open two processes/command lines. In one, `npm run-script start-express`. In the other, `npm run-script start-ng`.
@@ -16,9 +19,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 * Developed w 5.7.20x86, but may work with other versions. The application works out-of-the-box with MySQL, but with trivial modification the project will support other SQL DBs and even NoSQL DBs. The limitting factor is TypeORM.
 
+### Additional Setup for Development
+1. Globally install Angular CLI: `npm i -g @angular/cli`
+1. Globally install Loopback 4 CLI: `npm i -g @loopback/cli`
+
 ### Architecty Things
 1. The API server and the Angular Universal server are distinct. So there are three entry points in the code:
-    1. Express API server entry point at /src/server.js
+    1. API server entry point at /src/server.js
     1. Angular Universal server entry point at /src/main.ts
     1. Angular Universal UI entry point at /src/client/app.module.ts
 
@@ -88,7 +95,7 @@ orchestration, ORM, API generation
 1. https://loopback.io/ (v4)
 1. https://github.com/odino/the-conductor
 
-
+DB stuff
 https://dev.mysql.com/downloads/windows/installer/5.7.html
 mysql-installer-web-community-5.7.20.0.msi
 localhost db server tcp/ip at port 3306, config type dev machine, root pass: password
@@ -97,7 +104,9 @@ run as windows service, name MYSQL57
 X Protocol / doc store disabled
 C:\Program Files (x86)\MySQL\MySQL Server 5.7
 
-conventions
+### Other Stuff & Conventions
+
 1. generate non-flat services (generate --flat=false)
 1. seperate API server from ng universal rendering back end
 1. name services like service-a and componenets like component-b (ng cli compatible)
+1. global webpack not recommended https://webpack.js.org/guides/installation/#global-installation
