@@ -1,13 +1,17 @@
 # Ella
-ref: https://github.com/Vandivier/ng-express-cms/blob/master/README.md
 
-Rebranding to Ella. Ella is a CMS. Name comes from Express + Loopback + Angular = Ela, but Ella is a person's name, so, like, that's better.
+Ella is a [universal JavaScript](https://medium.com/@mjackson/universal-javascript-4761051b7ae9) application development framework.
 
-Don't want to call it ng-express-cms because the api server is loopback.
+Ella has two subprojects:
+1. [Ella Framework](https://github.com/Vandivier/ella-framework) is an opinionated Angular Universal (v5.x+) implementation. As such, it includes UI code and a rendering server.
+1. [Ella API](https://github.com/Vandivier/ella-api) is an opinionated Loopback 4 API server.
 
-Uses Angular Universal + Angular (v5.1+) + Angular CLI + Express + MySQL + TypeORM
+### Why is it called Ella Framework?
+'Ella' personifies E.L.A, an abbreviation of Express + Loopback + Angular. The project was conceived as an Angular Universal CMS and called Ng Express CMS.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
+For technical reasons the API server was split out and implemented in Loopback 4. Loopback 4 does not leverage Express, and in principle this API server can be used with or without Angular. This calls for a project rename.
+
+To prevent renaming in the future, the technical ingrediants were obfoscated in the current name. If the project composition changes further, it will continue to operate under the name 'Ella'.
 
 ### Launching the app
 1. install MySQL Server 5.7*
