@@ -1,4 +1,4 @@
-# Ella
+# Ella Framework
 
 Ella is a [universal JavaScript](https://medium.com/@mjackson/universal-javascript-4761051b7ae9) application development framework.
 
@@ -6,26 +6,22 @@ Ella has two subprojects:
 1. [Ella Framework](https://github.com/Vandivier/ella-framework) is an opinionated Angular Universal (v5.x+) implementation. As such, it includes UI code and a rendering server.
 1. [Ella API](https://github.com/Vandivier/ella-api) is an opinionated Loopback 4 API server.
 
-### Why is it called Ella Framework?
+### Why is it called Ella?
 'Ella' personifies E.L.A, an abbreviation of Express + Loopback + Angular. The project was conceived as an Angular Universal CMS and called Ng Express CMS.
 
 For technical reasons the API server was split out and implemented in Loopback 4. Loopback 4 does not leverage Express, and in principle this API server can be used with or without Angular. This calls for a project rename.
 
 To prevent renaming in the future, the technical ingrediants were obfoscated in the current name. If the project composition changes further, it will continue to operate under the name 'Ella'.
 
-### Launching the app
-1. install MySQL Server 5.7*
-1. `CREATE DATABASE ellacms`. TypeORM updates DB, but it must already exist. Optionally verify with `SHOW DATABASES`.
+### Starting the Project
 1. `npm install`
-1. Not Windows: `npm start`
-    1. Windows: open two processes/command lines. In one, `npm run-script start-express`. In the other, `npm run-script start-ng`.
-1. visit localhost:4200 for the UI app. API served from localhost:3200
+1. `npm start`
+1. visit localhost:4200
 
 * Developed w 5.7.20x86, but may work with other versions. The application works out-of-the-box with MySQL, but with trivial modification the project will support other SQL DBs and even NoSQL DBs. The limitting factor is TypeORM.
 
 ### Additional Setup for Development
-1. Globally install Angular CLI: `npm i -g @angular/cli`
-1. Globally install Loopback 4 CLI: `npm i -g @loopback/cli`
+1. Globally install [Angular CLI](https://github.com/angular/angular-cli#installation): `npm install -g @angular/cli`
 
 ### Architecty Things
 1. The API server and the Angular Universal server are distinct. So there are three entry points in the code:
@@ -69,10 +65,6 @@ UX: Bootstrap 4 + Angular Material + Rando Components including Angular and HTML
 1. https://ng-bootstrap.github.io/#/components/rating/examples
 1. https://www.bootstrapcdn.com/
 
-Auth and Firebase
-1. https://www.youtube.com/watch?v=O_jxEC0hWcA
-1. https://github.com/diegohaz/rest
-
 Chart.js w/ Angular 5, with data and API (ng generate service)
 1. https://www.youtube.com/watch?v=RTzi5DS7On4
 
@@ -94,23 +86,7 @@ https://getbootstrap.com/docs/4.0/examples/justified-nav/#
 magic werdz
 ng generate component navbar --module app
 
-orchestration, ORM, API generation
-1. https://www.slant.co/improve/topics/11235/~javascript-orms
-1. https://loopback.io/ (v4)
-1. https://github.com/odino/the-conductor
-
-DB stuff
-https://dev.mysql.com/downloads/windows/installer/5.7.html
-mysql-installer-web-community-5.7.20.0.msi
-localhost db server tcp/ip at port 3306, config type dev machine, root pass: password
-test user, DB admin, host %, pass: test
-run as windows service, name MYSQL57
-X Protocol / doc store disabled
-C:\Program Files (x86)\MySQL\MySQL Server 5.7
-
 ### Other Stuff & Conventions
 
 1. generate non-flat services (generate --flat=false)
-1. seperate API server from ng universal rendering back end
 1. name services like service-a and componenets like component-b (ng cli compatible)
-1. global webpack not recommended https://webpack.js.org/guides/installation/#global-installation
