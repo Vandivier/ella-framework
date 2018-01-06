@@ -3,31 +3,26 @@
 Ella is a [universal JavaScript](https://medium.com/@mjackson/universal-javascript-4761051b7ae9) application development framework.
 
 Ella has two subprojects:
-1. [Ella Framework](https://github.com/Vandivier/ella-framework) is an opinionated Angular Universal (v5.x+) implementation. As such, it includes UI code and a rendering server.
-1. [Ella API](https://github.com/Vandivier/ella-api) is an opinionated Loopback 4 API server.
+
+1. [Ella Framework](https://github.com/Vandivier/ella-framework) is an opinionated [Angular Universal](https://universal.angular.io/) implementation. As such, it includes UI code and a rendering server.
+2. [Ella API](https://github.com/Vandivier/ella-api) is an opinionated [Loopback](https://loopback.io/) API server.
 
 ### Why is it called Ella?
-'Ella' personifies E.L.A, an abbreviation of Express + Loopback + Angular. The project was conceived as an Angular Universal CMS and called Ng Express CMS.
+'Ella' personifies E.L.A, an abbreviation of Express + Loopback + Angular.
 
-For technical reasons the API server was split out and implemented in Loopback 4. Loopback 4 does not leverage Express, and in principle this API server can be used with or without Angular. This calls for a project rename.
+The project was originally an Angular Universal CMS and called Ng Express CMS. For technical reasons the API server was split out and implemented in Loopback.
+
+Loopback does not leverage Express in all versions, and the API server can be used with or without Angular. This called for a rename.
 
 To prevent renaming in the future, the technical ingrediants were obfoscated in the current name. If the project composition changes further, it will continue to operate under the name 'Ella'.
 
 ### Starting the Project
 1. `npm install`
-1. `npm start`
-1. visit localhost:4200
-
-* Developed w 5.7.20x86, but may work with other versions. The application works out-of-the-box with MySQL, but with trivial modification the project will support other SQL DBs and even NoSQL DBs. The limitting factor is TypeORM.
+2. `npm start`
+3. visit localhost:4200
 
 ### Additional Setup for Development
 1. Globally install [Angular CLI](https://github.com/angular/angular-cli#installation): `npm install -g @angular/cli`
-
-### Architecty Things
-1. The API server and the Angular Universal server are distinct. So there are three entry points in the code:
-    1. API server entry point at /src/server.js
-    1. Angular Universal server entry point at /src/main.ts
-    1. Angular Universal UI entry point at /src/client/app.module.ts
 
 ### related projects and links
 The most important is #1. #2+ are not ordered.
@@ -47,7 +42,6 @@ The most important is #1. #2+ are not ordered.
 1. http://www.afterecon.com/other/existing-js-cms-solutions-shit/
 1. https://www.youtube.com/watch?v=oa9cnWTpqP8
 1. https://github.com/angular/universal-starter/issues/411
-1. https://github.com/typeorm/typescript-express-example/blob/master/src/routes.ts
 1. https://github.com/seriema/angular-apimock
 1. https://github.com/EreckGordon/angular-universal-pwa-starter
 1. https://github.com/ramsaylanier/VuePress
