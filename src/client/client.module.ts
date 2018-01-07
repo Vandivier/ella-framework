@@ -1,22 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import { ClientRoutingModule } from './client-routing.module';
 import { FormsModule } from '@angular/forms';
 
 import { ServiceArticlesService } from './service-articles/service-articles.service';
 
-import { AppComponent } from './app.component';
+import { ClientComponent } from './client.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 
-
 @NgModule({
   declarations: [
-    AppComponent,
+    ClientComponent,
     AboutComponent,
     HomeComponent,
     DashboardComponent,
@@ -25,10 +24,10 @@ import { SignInComponent } from './sign-in/sign-in.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    ClientRoutingModule,
     FormsModule
   ],
   providers: [ServiceArticlesService],
-  bootstrap: [AppComponent]
+  bootstrap: [ClientComponent]
 })
-export class AppModule { }
+export class ClientModule { }
