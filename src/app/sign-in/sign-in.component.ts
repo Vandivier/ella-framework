@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ServiceBaseService } from '../service-base/service-base.service';
+
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignInComponent implements OnInit {
 
-  constructor() { }
+  constructor(private B: ServiceBaseService) {
+      console.log(B.UrlManager.fGet('test'));
+  }
 
   ngOnInit() {
   }

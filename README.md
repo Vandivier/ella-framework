@@ -45,6 +45,8 @@ The most important is #1. #2+ are not ordered.
 1. https://github.com/seriema/angular-apimock
 1. https://github.com/EreckGordon/angular-universal-pwa-starter
 1. https://github.com/ramsaylanier/VuePress
+1. https://scotch.io/tutorials/angular-2-http-requests-with-observables
+1. https://codecraft.tv/courses/angular/http/core-http-api/
 
 UX: Bootstrap 4 + Angular Material + Rando Components including Angular and HTML5, SCSS
 1. using Boostrap 4.0.0-beta.3
@@ -77,11 +79,10 @@ https://getbootstrap.com/docs/4.0/examples/blog/
 homepage
 https://getbootstrap.com/docs/4.0/examples/justified-nav/#
 
-magic werdz
-ng generate component navbar --module app
-
 ### Other Stuff & Conventions
 
-1. generate non-flat services (generate --flat=false)
+1. generate components like `ng generate service ServiceStateManager --flat=false`
+    1. prefix with component type so when we sort components are grouped
+    1. non-flat to prevent so many files in one dir
 1. name services like service-a and componenets like component-b (ng cli compatible)
 1. it's a strongly embedded convention in Angular CLI that the main app & module are called 'app'
