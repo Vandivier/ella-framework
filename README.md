@@ -84,3 +84,4 @@ ng generate component navbar --module app
 
 1. generate non-flat services (generate --flat=false)
 1. name services like service-a and componenets like component-b (ng cli compatible)
+1. it's a strongly embedded convention in Angular CLI that the main app & module are called 'app'
