@@ -47,6 +47,9 @@ The most important is #1. #2+ are not ordered.
 1. https://github.com/ramsaylanier/VuePress
 1. https://scotch.io/tutorials/angular-2-http-requests-with-observables
 1. https://codecraft.tv/courses/angular/http/core-http-api/
+1. http://jasonwatmore.com/post/2016/09/29/angular-2-user-registration-and-login-example-tutorial
+1. https://stackoverflow.com/questions/40232120/how-can-i-access-component-reference-in-angular-2-by-dom-element-id
+1. https://alligator.io/angular/httpclient-interceptors/
 
 UX: Bootstrap 4 + Angular Material + Rando Components including Angular and HTML5, SCSS
 1. using Boostrap 4.0.0-beta.3
