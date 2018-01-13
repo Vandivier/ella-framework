@@ -63,6 +63,8 @@ UX: Bootstrap 4 + Angular Material + Rando Components including Angular and HTML
 1. CSS Grid...? https://www.youtube.com/watch?v=jV8B24rSN5o
 1. https://ng-bootstrap.github.io/#/components/rating/examples
 1. https://www.bootstrapcdn.com/
+1. https://coolors.co/
+1. http://paletton.com
 
 Chart.js w/ Angular 5, with data and API (ng generate service)
 1. https://www.youtube.com/watch?v=RTzi5DS7On4

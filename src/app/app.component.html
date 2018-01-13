@@ -1,10 +1,9 @@
-<!--The content below is only a placeholder and can be replaced.-->
-
-<ul>
-    <li><a routerLink="">Home</a></li>
-    <li><a routerLink="about">About</a></li>
-    <li><a routerLink="contact-us">Contact Us</a></li>
-    <li><a routerLink="sign-in">Sign In</a></li>
-</ul>
+<header class="header-nav row"> <!-- ref: https://v4-alpha.getbootstrap.com/utilities/flexbox/#enable-flex-behaviors -->
+    <div class="p-2 col-8">Welcome, Guest!</div>
+    <div class="p-2 col"><a routerLink="">Home</a></div>
+    <div class="p-2 col"><a routerLink="about">About</a></div>
+    <div class="p-2 col"><a routerLink="contact-us">Contact Us</a></div>
+    <div class="p-2 col"><a routerLink="sign-in">Sign In</a></div>
+</header>
 
 <router-outlet></router-outlet>

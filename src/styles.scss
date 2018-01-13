@@ -3,10 +3,8 @@
 @import 'constants.scss';
 
 body {
-    background: rgba(44, 47, 47, 0.88);
-    color: white;
-    font-family: 'Arial';
-    padding: 3em;
+    background: $neutral-light;
+    color: $triad-dark;
 }
 
 ul {
@@ -15,11 +13,28 @@ ul {
     padding: 0;
 }
 
-ul li {
-    display: inline;
+a {
+    color: $triad-dark;
+    text-decoration: none;
 }
 
-a {
-    color: white;
+a:hover {
+    color: $primary-light;
     text-decoration: none;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: $primary-mid;
+}
+
+.btn-primary {
+    background-color: $primary-mid;
+}
+
+.spaced-row {
+    margin-top: 200px;
 }

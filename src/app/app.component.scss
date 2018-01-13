@@ -1,0 +1,15 @@
+@import '../constants.scss';
+
+.header-nav {
+    border-bottom: 1px solid $secondary-mid;
+    color: $secondary-mid;
+    font-size: 1.1rem;
+}
+
+.header-nav a {
+    color: $secondary-mid;
+}
+
+.header-nav a:hover {
+    color: $primary-off-light;
+}
