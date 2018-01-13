@@ -6,15 +6,8 @@
     grid-template-columns: 50% auto;
 }
 
-.container.article-container {
-    background: #57B3F1;
-    cursor: pointer;
-    font-weight: bold;
-    padding: .5em;
-}
-
 .col {
-    padding: .4em 1.3em;
+    padding: 0 1.3em .4em;
 }
 
 .color-dark {
@@ -41,4 +34,36 @@ input.btn {
     margin-bottom: 1em;
     padding: 1em 3em;
     width: 80%;
+}
+
+.article-section {
+    background: #57B3F1;
+    font-weight: bold;
+    padding: .5em;
+    margin-bottom: 10px;
+}
+
+.article-title {
+    cursor: pointer;
+}
+
+.article-delete {
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+}
+
+.article-content {
+    margin-top: 10px;
+    background: #5780F1;
+    font-weight: normal;
+    padding: .5em;
+}
+
+.article-content-hide {
+    display: none;
+}
+
+.article-content-show {
+    display: block;
 }

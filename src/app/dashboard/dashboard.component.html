@@ -1,6 +1,6 @@
 <div class="container color-dark">
     <div class="col">
-        <p>Create a New Blog Article</p>
+        <p>Create a New Article</p>
     </div>
     <div class="col">
         <p>Your Articles ({{ arroArticles.length }})</p>
@@ -13,14 +13,16 @@
                 <input
                     class="txt"
                     name="title"
-                    [(ngModel)]="oNewArticle.sTitle"
+                    [(ngModel)]="oNewArticle.title"
                     placeholder="Article Title"
+                    required
                     type="text">
                 <input
                     class="txt"
                     name="body"
-                    [(ngModel)]="oNewArticle.sContent"
+                    [(ngModel)]="oNewArticle.content"
                     placeholder="Ya, so what about it...?"
+                    required
                     type="text">
                 <input type="submit" class="btn" name="save" value="Save"> <!-- TODO: functional implementation of save; admin sees it but not visitor -->
                 <input
@@ -33,10 +35,15 @@
         </div>
     </div>
     <div class="col">
-        <p class="container article-container"
-           (click)="fRemoveArticle()"
+        <div class="article-section"
            *ngFor="let oArticle of arroArticles">
-            {{ oArticle.sTitle }} <!-- TODO: click to go to article page -->
-        </p>
+            <div (click)="fToggleArticleContent(oArticle)">
+                <span class="article-title">{{ oArticle.id }} - {{ oArticle.title }}</span>
+                <span class="article-delete" (click)="fRemoveArticle(oArticle)">X</span>
+            </div>
+            <div class="article-content-hide" [ngClass]="{'article-content-show': oArticle.isContentVisible}">
+                <div class="article-content">{{ oArticle.content }}</div>
+            </div>
+        </div>
     </div>
 </div>

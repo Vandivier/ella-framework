@@ -1,0 +1,9 @@
+{
+    "id": 1,
+    "username": "testUsername",
+    "email": "testPrivateEmail@test.com",
+    "password": "123abc",
+    "public-email": "testPublicEmail@test.com",
+    "owned-items": [],
+    "role-name": "administrator"
+}

@@ -1,38 +1,44 @@
 import { Component, OnInit } from '@angular/core';
-
 import { ServiceArticlesService } from '../service-articles/service-articles.service';
+import { Item } from '../domain/Item';
+import { ItemType } from '../domain/ItemType';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+    selector: 'app-dashboard',
+    templateUrl: './dashboard.component.html',
+    styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
 
-  oNewArticle: any = {}; // TODO: Article, not any
-  sSubmitArticleButtonText: string = 'Publish'; // TODO: or Schedule or Update depending on WordPress-like conditions
-  arroArticles = [];
+    oNewArticle: Item;
+    sSubmitArticleButtonText: string = 'Publish'; // TODO: or Schedule or Update depending on WordPress-like conditions
+    arroArticles = [];
 
-  constructor(private ServiceArticles: ServiceArticlesService) { }
+    constructor(private ServiceArticles: ServiceArticlesService) {
+        this.oNewArticle = new Item('','',ItemType.Article);
+    }
 
-  fAddArticle() {
-      if (this.oNewArticle.sTitle
-          && this.oNewArticle.sContent)
-      {
-          this.arroArticles.push(this.oNewArticle);
-          this.ServiceArticles.fBroadcastArticleUpdate(this.arroArticles);
-      }
-  }
+    fAddArticle() {
+        let newArticle = this.oNewArticle;
+        if (newArticle.title && newArticle.content) {
+            this.arroArticles.push(new Item(newArticle.title, newArticle.content, ItemType.Article));
+            this.ServiceArticles.fBroadcastArticleUpdate(this.arroArticles);
+        }
+    }
 
-  // TODO: remove via key not index
-  fRemoveArticle(i) {
-      this.arroArticles.splice(i, 1);
-      this.ServiceArticles.fBroadcastArticleUpdate(this.arroArticles);
-  }
+    fRemoveArticle(item) {
+        this.arroArticles = this.arroArticles.filter(_item => _item !== item);
+        this.ServiceArticles.fBroadcastArticleUpdate(this.arroArticles);
+    }
 
-  ngOnInit() {
-      this.ServiceArticles.obsarrArticles.subscribe(res => this.arroArticles = res);
-      this.ServiceArticles.fBroadcastArticleUpdate(this.arroArticles);
-  }
+    fToggleArticleContent(item) {
+        item.isContentVisible = !item.isContentVisible;
+    }
+
+    ngOnInit() {
+        this.ServiceArticles.obsarrArticles.subscribe(res => this.arroArticles = res);
+        this.ServiceArticles.fBroadcastArticleUpdate(this.arroArticles);
+    }
 
 }
+

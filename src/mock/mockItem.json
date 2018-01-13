@@ -1,0 +1,7 @@
+{
+    "id": 1,
+    "creatorId": 1,
+    "title": "My Article Title",
+    "content": "<span style=\"color: red;\">This is the text of the article</span>",
+    "type": "article"
+}
